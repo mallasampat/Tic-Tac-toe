@@ -1,0 +1,49 @@
+html {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+:root {
+    --border-style: 2px solid black;
+}
+
+#outer {
+    width: 450px;
+    height: 450px;
+    padding: 5px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid red;
+}
+
+.inner {
+    width: 150px;
+    height: 150px;
+    flex-basis: 33%;
+    cursor: pointer;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#block-0, #block-1, #block-3, #block-4 {
+    border-bottom: var(--border-style);
+    border-right: var(--border-style);
+}
+
+#block-2, #block-5 {
+    border-bottom: var(--border-style);
+}
+
+#block-6 {
+    border-right: var(--border-style);
+}
+
+#block-7 {
+    border-right: var(--border-style);
+}
